@@ -216,19 +216,19 @@ public extension JellyfinClient {
     ///   - quickConnectSecret: current Quick Connect secret
     ///
     /// - Throws: `ClientError.noAccessTokenInResponse` if no access token was supplied in a successful authentication response
-    @discardableResult
-    func signIn(quickConnectSecret: String) async throws -> AuthenticationResult {
-        let request = Paths.authenticateWithQuickConnect(.init(secret: quickConnectSecret))
-        let response = try await send(request).value
-
-        if let accessToken = response.accessToken {
-            self.accessToken = accessToken
-        } else {
-            throw ClientError.noAccessTokenInResponse
-        }
-
-        return response
-    }
+//    @discardableResult
+//    func signIn(quickConnectSecret: String) async throws -> AuthenticationResult {
+//        let request = Paths.authenticateWithQuickConnect(.init(secret: quickConnectSecret))
+//        let response = try await send(request).value
+//
+//        if let accessToken = response.accessToken {
+//            self.accessToken = accessToken
+//        } else {
+//            throw ClientError.noAccessTokenInResponse
+//        }
+//
+//        return response
+//    }
 
     /// Signs out the current user with the server by revoking the current access token if one is set.
     /// Overrides the current access token if the revoke was successful.
