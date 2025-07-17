@@ -31,8 +31,8 @@ public extension Paths {
         public var hasParentalRating: Bool?
         public var isHd: Bool?
         public var isIs4K: Bool?
-        public var locationTypes: [JellyfinAPI.LocationType]?
-        public var excludeLocationTypes: [JellyfinAPI.LocationType]?
+//        public var locationTypes: [JellyfinAPI.LocationType]?
+//        public var excludeLocationTypes: [JellyfinAPI.LocationType]?
         public var isMissing: Bool?
         public var isUnaired: Bool?
         public var minCommunityRating: Double?
@@ -60,7 +60,7 @@ public extension Paths {
         public var fields: [JellyfinAPI.ItemFields]?
         public var excludeItemTypes: [JellyfinAPI.BaseItemKind]?
         public var includeItemTypes: [JellyfinAPI.BaseItemKind]?
-        public var filters: [JellyfinAPI.ItemFilter]?
+//        public var filters: [JellyfinAPI.ItemFilter]?
         public var isFavorite: Bool?
         public var mediaTypes: [String]?
         public var imageTypes: [JellyfinAPI.ImageType]?
@@ -85,7 +85,7 @@ public extension Paths {
         public var albums: [String]?
         public var albumIDs: [String]?
         public var ids: [String]?
-        public var videoTypes: [JellyfinAPI.VideoType]?
+//        public var videoTypes: [JellyfinAPI.VideoType]?
         public var minOfficialRating: String?
         public var isLocked: Bool?
         public var isPlaceHolder: Bool?
@@ -96,7 +96,7 @@ public extension Paths {
         public var maxWidth: Int?
         public var maxHeight: Int?
         public var isIs3D: Bool?
-        public var seriesStatus: [JellyfinAPI.SeriesStatus]?
+//        public var seriesStatus: [JellyfinAPI.SeriesStatus]?
         public var nameStartsWithOrGreater: String?
         public var nameStartsWith: String?
         public var nameLessThan: String?
@@ -117,8 +117,8 @@ public extension Paths {
             hasParentalRating: Bool? = nil,
             isHd: Bool? = nil,
             isIs4K: Bool? = nil,
-            locationTypes: [JellyfinAPI.LocationType]? = nil,
-            excludeLocationTypes: [JellyfinAPI.LocationType]? = nil,
+//            locationTypes: [JellyfinAPI.LocationType]? = nil,
+//            excludeLocationTypes: [JellyfinAPI.LocationType]? = nil,
             isMissing: Bool? = nil,
             isUnaired: Bool? = nil,
             minCommunityRating: Double? = nil,
@@ -141,12 +141,12 @@ public extension Paths {
             limit: Int? = nil,
             isRecursive: Bool? = nil,
             searchTerm: String? = nil,
-            sortOrder: [JellyfinAPI.SortOrder]? = nil,
+//            sortOrder: [JellyfinAPI.SortOrder]? = nil,
             parentID: String? = nil,
             fields: [JellyfinAPI.ItemFields]? = nil,
             excludeItemTypes: [JellyfinAPI.BaseItemKind]? = nil,
             includeItemTypes: [JellyfinAPI.BaseItemKind]? = nil,
-            filters: [JellyfinAPI.ItemFilter]? = nil,
+//            filters: [JellyfinAPI.ItemFilter]? = nil,
             isFavorite: Bool? = nil,
             mediaTypes: [String]? = nil,
             imageTypes: [JellyfinAPI.ImageType]? = nil,
@@ -171,7 +171,7 @@ public extension Paths {
             albums: [String]? = nil,
             albumIDs: [String]? = nil,
             ids: [String]? = nil,
-            videoTypes: [JellyfinAPI.VideoType]? = nil,
+//            videoTypes: [JellyfinAPI.VideoType]? = nil,
             minOfficialRating: String? = nil,
             isLocked: Bool? = nil,
             isPlaceHolder: Bool? = nil,
@@ -182,7 +182,7 @@ public extension Paths {
             maxWidth: Int? = nil,
             maxHeight: Int? = nil,
             isIs3D: Bool? = nil,
-            seriesStatus: [JellyfinAPI.SeriesStatus]? = nil,
+//            seriesStatus: [JellyfinAPI.SeriesStatus]? = nil,
             nameStartsWithOrGreater: String? = nil,
             nameStartsWith: String? = nil,
             nameLessThan: String? = nil,
@@ -202,8 +202,8 @@ public extension Paths {
             self.hasParentalRating = hasParentalRating
             self.isHd = isHd
             self.isIs4K = isIs4K
-            self.locationTypes = locationTypes
-            self.excludeLocationTypes = excludeLocationTypes
+//            self.locationTypes = locationTypes
+//            self.excludeLocationTypes = excludeLocationTypes
             self.isMissing = isMissing
             self.isUnaired = isUnaired
             self.minCommunityRating = minCommunityRating
@@ -226,12 +226,12 @@ public extension Paths {
             self.limit = limit
             self.isRecursive = isRecursive
             self.searchTerm = searchTerm
-            self.sortOrder = sortOrder
+//            self.sortOrder = sortOrder
             self.parentID = parentID
             self.fields = fields
             self.excludeItemTypes = excludeItemTypes
             self.includeItemTypes = includeItemTypes
-            self.filters = filters
+//            self.filters = filters
             self.isFavorite = isFavorite
             self.mediaTypes = mediaTypes
             self.imageTypes = imageTypes
@@ -256,7 +256,7 @@ public extension Paths {
             self.albums = albums
             self.albumIDs = albumIDs
             self.ids = ids
-            self.videoTypes = videoTypes
+//            self.videoTypes = videoTypes
             self.minOfficialRating = minOfficialRating
             self.isLocked = isLocked
             self.isPlaceHolder = isPlaceHolder
@@ -267,7 +267,7 @@ public extension Paths {
             self.maxWidth = maxWidth
             self.maxHeight = maxHeight
             self.isIs3D = isIs3D
-            self.seriesStatus = seriesStatus
+//            self.seriesStatus = seriesStatus
             self.nameStartsWithOrGreater = nameStartsWithOrGreater
             self.nameStartsWith = nameStartsWith
             self.nameLessThan = nameLessThan
@@ -290,8 +290,8 @@ public extension Paths {
             encoder.encode(hasParentalRating, forKey: "hasParentalRating")
             encoder.encode(isHd, forKey: "isHd")
             encoder.encode(isIs4K, forKey: "is4K")
-            encoder.encode(locationTypes, forKey: "locationTypes")
-            encoder.encode(excludeLocationTypes, forKey: "excludeLocationTypes")
+//            encoder.encode(locationTypes, forKey: "locationTypes")
+//            encoder.encode(excludeLocationTypes, forKey: "excludeLocationTypes")
             encoder.encode(isMissing, forKey: "isMissing")
             encoder.encode(isUnaired, forKey: "isUnaired")
             encoder.encode(minCommunityRating, forKey: "minCommunityRating")
@@ -314,12 +314,12 @@ public extension Paths {
             encoder.encode(limit, forKey: "limit")
             encoder.encode(isRecursive, forKey: "recursive")
             encoder.encode(searchTerm, forKey: "searchTerm")
-            encoder.encode(sortOrder, forKey: "sortOrder")
+//            encoder.encode(sortOrder, forKey: "sortOrder")
             encoder.encode(parentID, forKey: "parentId")
             encoder.encode(fields, forKey: "fields")
             encoder.encode(excludeItemTypes, forKey: "excludeItemTypes")
             encoder.encode(includeItemTypes, forKey: "includeItemTypes")
-            encoder.encode(filters, forKey: "filters")
+//            encoder.encode(filters, forKey: "filters")
             encoder.encode(isFavorite, forKey: "isFavorite")
             encoder.encode(mediaTypes, forKey: "mediaTypes")
             encoder.encode(imageTypes, forKey: "imageTypes")
@@ -344,7 +344,7 @@ public extension Paths {
             encoder.encode(albums, forKey: "albums")
             encoder.encode(albumIDs, forKey: "albumIds")
             encoder.encode(ids, forKey: "ids")
-            encoder.encode(videoTypes, forKey: "videoTypes")
+//            encoder.encode(videoTypes, forKey: "videoTypes")
             encoder.encode(minOfficialRating, forKey: "minOfficialRating")
             encoder.encode(isLocked, forKey: "isLocked")
             encoder.encode(isPlaceHolder, forKey: "isPlaceHolder")
@@ -355,7 +355,7 @@ public extension Paths {
             encoder.encode(maxWidth, forKey: "maxWidth")
             encoder.encode(maxHeight, forKey: "maxHeight")
             encoder.encode(isIs3D, forKey: "is3D")
-            encoder.encode(seriesStatus, forKey: "seriesStatus")
+//            encoder.encode(seriesStatus, forKey: "seriesStatus")
             encoder.encode(nameStartsWithOrGreater, forKey: "nameStartsWithOrGreater")
             encoder.encode(nameStartsWith, forKey: "nameStartsWith")
             encoder.encode(nameLessThan, forKey: "nameLessThan")

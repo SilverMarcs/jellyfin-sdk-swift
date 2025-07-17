@@ -21,7 +21,7 @@ public struct PlaybackStopInfo: Codable, Hashable {
     /// Gets or sets the media version identifier.
     public var mediaSourceID: String?
     public var nextMediaType: String?
-    public var nowPlayingQueue: [QueueItem]?
+//    public var nowPlayingQueue: [QueueItem]?
     /// Gets or sets the play session identifier.
     public var playSessionID: String?
     public var playlistItemID: String?
@@ -37,7 +37,7 @@ public struct PlaybackStopInfo: Codable, Hashable {
         liveStreamID: String? = nil,
         mediaSourceID: String? = nil,
         nextMediaType: String? = nil,
-        nowPlayingQueue: [QueueItem]? = nil,
+//        nowPlayingQueue: [QueueItem]? = nil,
         playSessionID: String? = nil,
         playlistItemID: String? = nil,
         positionTicks: Int? = nil,
@@ -49,7 +49,7 @@ public struct PlaybackStopInfo: Codable, Hashable {
         self.liveStreamID = liveStreamID
         self.mediaSourceID = mediaSourceID
         self.nextMediaType = nextMediaType
-        self.nowPlayingQueue = nowPlayingQueue
+//        self.nowPlayingQueue = nowPlayingQueue
         self.playSessionID = playSessionID
         self.playlistItemID = playlistItemID
         self.positionTicks = positionTicks
@@ -64,7 +64,7 @@ public struct PlaybackStopInfo: Codable, Hashable {
         self.liveStreamID = try values.decodeIfPresent(String.self, forKey: "LiveStreamId")
         self.mediaSourceID = try values.decodeIfPresent(String.self, forKey: "MediaSourceId")
         self.nextMediaType = try values.decodeIfPresent(String.self, forKey: "NextMediaType")
-        self.nowPlayingQueue = try values.decodeIfPresent([QueueItem].self, forKey: "NowPlayingQueue")
+//        self.nowPlayingQueue = try values.decodeIfPresent([QueueItem].self, forKey: "NowPlayingQueue")
         self.playSessionID = try values.decodeIfPresent(String.self, forKey: "PlaySessionId")
         self.playlistItemID = try values.decodeIfPresent(String.self, forKey: "PlaylistItemId")
         self.positionTicks = try values.decodeIfPresent(Int.self, forKey: "PositionTicks")
@@ -79,7 +79,7 @@ public struct PlaybackStopInfo: Codable, Hashable {
         try values.encodeIfPresent(liveStreamID, forKey: "LiveStreamId")
         try values.encodeIfPresent(mediaSourceID, forKey: "MediaSourceId")
         try values.encodeIfPresent(nextMediaType, forKey: "NextMediaType")
-        try values.encodeIfPresent(nowPlayingQueue, forKey: "NowPlayingQueue")
+//        try values.encodeIfPresent(nowPlayingQueue, forKey: "NowPlayingQueue")
         try values.encodeIfPresent(playSessionID, forKey: "PlaySessionId")
         try values.encodeIfPresent(playlistItemID, forKey: "PlaylistItemId")
         try values.encodeIfPresent(positionTicks, forKey: "PositionTicks")

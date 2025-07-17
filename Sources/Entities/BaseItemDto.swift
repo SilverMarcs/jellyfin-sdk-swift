@@ -13,7 +13,7 @@ import Foundation
 /// This holds information about a BaseItem in a format that is convenient for the client.
 public struct BaseItemDto: Codable, Hashable, Identifiable {
     /// Gets or sets the air days.
-    public var airDays: [DayOfWeek]?
+//    public var airDays: [DayOfWeek]?
     /// Gets or sets the air time.
     public var airTime: String?
     public var airsAfterSeasonNumber: Int?
@@ -41,7 +41,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     /// Gets or sets the aspect ratio.
     public var aspectRatio: String?
     /// Gets or sets the audio.
-    public var audio: ProgramAudio?
+//    public var audio: ProgramAudio?
     /// Gets or sets the backdrop image tags.
     public var backdropImageTags: [String]?
     public var cameraMake: String?
@@ -55,9 +55,9 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     /// Gets or sets the channel primary image tag.
     public var channelPrimaryImageTag: String?
     /// Gets or sets the type of the channel.
-    public var channelType: ChannelType?
+//    public var channelType: ChannelType?
     /// Gets or sets the chapters.
-    public var chapters: [ChapterInfo]?
+//    public var chapters: [ChapterInfo]?
     /// Gets or sets the child count.
     public var childCount: Int?
     /// Gets or sets the type of the collection.
@@ -91,8 +91,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     public var etag: String?
     public var exposureTime: Double?
     /// Gets or sets the external urls.
-    public var externalURLs: [ExternalURL]?
-    public var extraType: ExtraType?
+//    public var externalURLs: [ExternalURL]?
+//    public var extraType: ExtraType?
     public var focalLength: Double?
     public var forcedSortName: String?
     public var genreItems: [NameGuidPair]?
@@ -138,16 +138,16 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     public var isSports: Bool?
     public var isoSpeedRating: Int?
     /// Gets or sets the type of the iso.
-    public var isoType: IsoType?
+//    public var isoType: IsoType?
     public var latitude: Double?
     /// Gets or sets the local trailer count.
     public var localTrailerCount: Int?
     /// Gets or sets the type of the location.
-    public var locationType: LocationType?
+//    public var locationType: LocationType?
     /// Gets or sets a value indicating whether [enable internet providers].
     public var lockData: Bool?
     /// Gets or sets the locked fields.
-    public var lockedFields: [MetadataField]?
+//    public var lockedFields: [MetadataField]?
     public var longitude: Double?
     public var mediaSourceCount: Int?
     /// Gets or sets the media versions.
@@ -202,7 +202,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     /// Gets or sets the people.
     public var people: [BaseItemPerson]?
     /// Gets or sets the play access.
-    public var playAccess: PlayAccess?
+//    public var playAccess: PlayAccess?
     /// Gets or sets the playlist item identifier.
     public var playlistItemID: String?
     public var preferredMetadataCountryCode: String?
@@ -222,7 +222,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     /// Gets or sets the recursive item count.
     public var recursiveItemCount: Int?
     /// Gets or sets the trailer urls.
-    public var remoteTrailers: [MediaURL]?
+//    public var remoteTrailers: [MediaURL]?
     /// Gets or sets the run time ticks.
     public var runTimeTicks: Int?
     /// Gets or sets the screenshot image tags.
@@ -262,7 +262,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     /// Gets or sets the status.
     public var status: String?
     /// Gets or sets the studios.
-    public var studios: [NameGuidPair]?
+//    public var studios: [NameGuidPair]?
     /// Gets or sets the taglines.
     public var taglines: [String]?
     /// Gets or sets the tags.
@@ -272,15 +272,15 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     /// Gets or sets the trailer count.
     public var trailerCount: Int?
     /// Gets or sets the trickplay manifest.
-    public var trickplay: [String: [String: TrickplayInfo]]?
+//    public var trickplay: [String: [String: TrickplayInfo]]?
     /// Gets or sets the type.
     public var type: BaseItemKind?
     /// Gets or sets the user data for this item based on the user it's being requested for.
     public var userData: UserItemDataDto?
     /// Gets or sets the video3 D format.
-    public var video3DFormat: Video3DFormat?
+//    public var video3DFormat: Video3DFormat?
     /// Gets or sets the type of the video.
-    public var videoType: VideoType?
+//    public var videoType: VideoType?
     public var width: Int?
 
     /// Gets or sets the blurhashes for the image tags.
@@ -367,7 +367,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
     }
 
     public init(
-        airDays: [DayOfWeek]? = nil,
+//        airDays: [DayOfWeek]? = nil,
         airTime: String? = nil,
         airsAfterSeasonNumber: Int? = nil,
         airsBeforeEpisodeNumber: Int? = nil,
@@ -384,7 +384,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         artistItems: [NameGuidPair]? = nil,
         artists: [String]? = nil,
         aspectRatio: String? = nil,
-        audio: ProgramAudio? = nil,
+//        audio: ProgramAudio? = nil,
         backdropImageTags: [String]? = nil,
         cameraMake: String? = nil,
         cameraModel: String? = nil,
@@ -394,8 +394,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         channelName: String? = nil,
         channelNumber: String? = nil,
         channelPrimaryImageTag: String? = nil,
-        channelType: ChannelType? = nil,
-        chapters: [ChapterInfo]? = nil,
+//        channelType: ChannelType? = nil,
+//        chapters: [ChapterInfo]? = nil,
         childCount: Int? = nil,
         collectionType: CollectionType? = nil,
         communityRating: Float? = nil,
@@ -414,8 +414,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         episodeTitle: String? = nil,
         etag: String? = nil,
         exposureTime: Double? = nil,
-        externalURLs: [ExternalURL]? = nil,
-        extraType: ExtraType? = nil,
+//        externalURLs: [ExternalURL]? = nil,
+//        extraType: ExtraType? = nil,
         focalLength: Double? = nil,
         forcedSortName: String? = nil,
         genreItems: [NameGuidPair]? = nil,
@@ -441,12 +441,12 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         isSeries: Bool? = nil,
         isSports: Bool? = nil,
         isoSpeedRating: Int? = nil,
-        isoType: IsoType? = nil,
+//        isoType: IsoType? = nil,
         latitude: Double? = nil,
         localTrailerCount: Int? = nil,
-        locationType: LocationType? = nil,
+//        locationType: LocationType? = nil,
         lockData: Bool? = nil,
-        lockedFields: [MetadataField]? = nil,
+//        lockedFields: [MetadataField]? = nil,
         longitude: Double? = nil,
         mediaSourceCount: Int? = nil,
         mediaSources: [MediaSourceInfo]? = nil,
@@ -475,7 +475,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         partCount: Int? = nil,
         path: String? = nil,
         people: [BaseItemPerson]? = nil,
-        playAccess: PlayAccess? = nil,
+//        playAccess: PlayAccess? = nil,
         playlistItemID: String? = nil,
         preferredMetadataCountryCode: String? = nil,
         preferredMetadataLanguage: String? = nil,
@@ -487,7 +487,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         programID: String? = nil,
         providerIDs: [String: String]? = nil,
         recursiveItemCount: Int? = nil,
-        remoteTrailers: [MediaURL]? = nil,
+//        remoteTrailers: [MediaURL]? = nil,
         runTimeTicks: Int? = nil,
         screenshotImageTags: [String]? = nil,
         seasonID: String? = nil,
@@ -513,14 +513,14 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         tags: [String]? = nil,
         timerID: String? = nil,
         trailerCount: Int? = nil,
-        trickplay: [String: [String: TrickplayInfo]]? = nil,
+//        trickplay: [String: [String: TrickplayInfo]]? = nil,
         type: BaseItemKind? = nil,
         userData: UserItemDataDto? = nil,
-        video3DFormat: Video3DFormat? = nil,
-        videoType: VideoType? = nil,
+//        video3DFormat: Video3DFormat? = nil,
+//        videoType: VideoType? = nil,
         width: Int? = nil
     ) {
-        self.airDays = airDays
+//        self.airDays = airDays
         self.airTime = airTime
         self.airsAfterSeasonNumber = airsAfterSeasonNumber
         self.airsBeforeEpisodeNumber = airsBeforeEpisodeNumber
@@ -537,7 +537,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.artistItems = artistItems
         self.artists = artists
         self.aspectRatio = aspectRatio
-        self.audio = audio
+//        self.audio = audio
         self.backdropImageTags = backdropImageTags
         self.cameraMake = cameraMake
         self.cameraModel = cameraModel
@@ -547,8 +547,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.channelName = channelName
         self.channelNumber = channelNumber
         self.channelPrimaryImageTag = channelPrimaryImageTag
-        self.channelType = channelType
-        self.chapters = chapters
+//        self.channelType = channelType
+//        self.chapters = chapters
         self.childCount = childCount
         self.collectionType = collectionType
         self.communityRating = communityRating
@@ -567,8 +567,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.episodeTitle = episodeTitle
         self.etag = etag
         self.exposureTime = exposureTime
-        self.externalURLs = externalURLs
-        self.extraType = extraType
+//        self.externalURLs = externalURLs
+//        self.extraType = extraType
         self.focalLength = focalLength
         self.forcedSortName = forcedSortName
         self.genreItems = genreItems
@@ -594,12 +594,12 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.isSeries = isSeries
         self.isSports = isSports
         self.isoSpeedRating = isoSpeedRating
-        self.isoType = isoType
+//        self.isoType = isoType
         self.latitude = latitude
         self.localTrailerCount = localTrailerCount
-        self.locationType = locationType
+//        self.locationType = locationType
         self.lockData = lockData
-        self.lockedFields = lockedFields
+//        self.lockedFields = lockedFields
         self.longitude = longitude
         self.mediaSourceCount = mediaSourceCount
         self.mediaSources = mediaSources
@@ -628,7 +628,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.partCount = partCount
         self.path = path
         self.people = people
-        self.playAccess = playAccess
+//        self.playAccess = playAccess
         self.playlistItemID = playlistItemID
         self.preferredMetadataCountryCode = preferredMetadataCountryCode
         self.preferredMetadataLanguage = preferredMetadataLanguage
@@ -640,7 +640,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.programID = programID
         self.providerIDs = providerIDs
         self.recursiveItemCount = recursiveItemCount
-        self.remoteTrailers = remoteTrailers
+//        self.remoteTrailers = remoteTrailers
         self.runTimeTicks = runTimeTicks
         self.screenshotImageTags = screenshotImageTags
         self.seasonID = seasonID
@@ -661,22 +661,22 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.specialFeatureCount = specialFeatureCount
         self.startDate = startDate
         self.status = status
-        self.studios = studios
+//        self.studios = studios
         self.taglines = taglines
         self.tags = tags
         self.timerID = timerID
         self.trailerCount = trailerCount
-        self.trickplay = trickplay
+//        self.trickplay = trickplay
         self.type = type
         self.userData = userData
-        self.video3DFormat = video3DFormat
-        self.videoType = videoType
+//        self.video3DFormat = video3DFormat
+//        self.videoType = videoType
         self.width = width
     }
 
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: StringCodingKey.self)
-        self.airDays = try values.decodeIfPresent([DayOfWeek].self, forKey: "AirDays")
+//        self.airDays = try values.decodeIfPresent([DayOfWeek].self, forKey: "AirDays")
         self.airTime = try values.decodeIfPresent(String.self, forKey: "AirTime")
         self.airsAfterSeasonNumber = try values.decodeIfPresent(Int.self, forKey: "AirsAfterSeasonNumber")
         self.airsBeforeEpisodeNumber = try values.decodeIfPresent(Int.self, forKey: "AirsBeforeEpisodeNumber")
@@ -693,7 +693,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.artistItems = try values.decodeIfPresent([NameGuidPair].self, forKey: "ArtistItems")
         self.artists = try values.decodeIfPresent([String].self, forKey: "Artists")
         self.aspectRatio = try values.decodeIfPresent(String.self, forKey: "AspectRatio")
-        self.audio = try values.decodeIfPresent(ProgramAudio.self, forKey: "Audio")
+//        self.audio = try values.decodeIfPresent(ProgramAudio.self, forKey: "Audio")
         self.backdropImageTags = try values.decodeIfPresent([String].self, forKey: "BackdropImageTags")
         self.cameraMake = try values.decodeIfPresent(String.self, forKey: "CameraMake")
         self.cameraModel = try values.decodeIfPresent(String.self, forKey: "CameraModel")
@@ -703,8 +703,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.channelName = try values.decodeIfPresent(String.self, forKey: "ChannelName")
         self.channelNumber = try values.decodeIfPresent(String.self, forKey: "ChannelNumber")
         self.channelPrimaryImageTag = try values.decodeIfPresent(String.self, forKey: "ChannelPrimaryImageTag")
-        self.channelType = try values.decodeIfPresent(ChannelType.self, forKey: "ChannelType")
-        self.chapters = try values.decodeIfPresent([ChapterInfo].self, forKey: "Chapters")
+//        self.channelType = try values.decodeIfPresent(ChannelType.self, forKey: "ChannelType")
+//        self.chapters = try values.decodeIfPresent([ChapterInfo].self, forKey: "Chapters")
         self.childCount = try values.decodeIfPresent(Int.self, forKey: "ChildCount")
         self.collectionType = try values.decodeIfPresent(CollectionType.self, forKey: "CollectionType")
         self.communityRating = try values.decodeIfPresent(Float.self, forKey: "CommunityRating")
@@ -723,8 +723,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.episodeTitle = try values.decodeIfPresent(String.self, forKey: "EpisodeTitle")
         self.etag = try values.decodeIfPresent(String.self, forKey: "Etag")
         self.exposureTime = try values.decodeIfPresent(Double.self, forKey: "ExposureTime")
-        self.externalURLs = try values.decodeIfPresent([ExternalURL].self, forKey: "ExternalUrls")
-        self.extraType = try values.decodeIfPresent(ExtraType.self, forKey: "ExtraType")
+//        self.externalURLs = try values.decodeIfPresent([ExternalURL].self, forKey: "ExternalUrls")
+//        self.extraType = try values.decodeIfPresent(ExtraType.self, forKey: "ExtraType")
         self.focalLength = try values.decodeIfPresent(Double.self, forKey: "FocalLength")
         self.forcedSortName = try values.decodeIfPresent(String.self, forKey: "ForcedSortName")
         self.genreItems = try values.decodeIfPresent([NameGuidPair].self, forKey: "GenreItems")
@@ -750,12 +750,12 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.isSeries = try values.decodeIfPresent(Bool.self, forKey: "IsSeries")
         self.isSports = try values.decodeIfPresent(Bool.self, forKey: "IsSports")
         self.isoSpeedRating = try values.decodeIfPresent(Int.self, forKey: "IsoSpeedRating")
-        self.isoType = try values.decodeIfPresent(IsoType.self, forKey: "IsoType")
+//        self.isoType = try values.decodeIfPresent(IsoType.self, forKey: "IsoType")
         self.latitude = try values.decodeIfPresent(Double.self, forKey: "Latitude")
         self.localTrailerCount = try values.decodeIfPresent(Int.self, forKey: "LocalTrailerCount")
-        self.locationType = try values.decodeIfPresent(LocationType.self, forKey: "LocationType")
+//        self.locationType = try values.decodeIfPresent(LocationType.self, forKey: "LocationType")
         self.lockData = try values.decodeIfPresent(Bool.self, forKey: "LockData")
-        self.lockedFields = try values.decodeIfPresent([MetadataField].self, forKey: "LockedFields")
+//        self.lockedFields = try values.decodeIfPresent([MetadataField].self, forKey: "LockedFields")
         self.longitude = try values.decodeIfPresent(Double.self, forKey: "Longitude")
         self.mediaSourceCount = try values.decodeIfPresent(Int.self, forKey: "MediaSourceCount")
         self.mediaSources = try values.decodeIfPresent([MediaSourceInfo].self, forKey: "MediaSources")
@@ -784,7 +784,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.partCount = try values.decodeIfPresent(Int.self, forKey: "PartCount")
         self.path = try values.decodeIfPresent(String.self, forKey: "Path")
         self.people = try values.decodeIfPresent([BaseItemPerson].self, forKey: "People")
-        self.playAccess = try values.decodeIfPresent(PlayAccess.self, forKey: "PlayAccess")
+//        self.playAccess = try values.decodeIfPresent(PlayAccess.self, forKey: "PlayAccess")
         self.playlistItemID = try values.decodeIfPresent(String.self, forKey: "PlaylistItemId")
         self.preferredMetadataCountryCode = try values.decodeIfPresent(String.self, forKey: "PreferredMetadataCountryCode")
         self.preferredMetadataLanguage = try values.decodeIfPresent(String.self, forKey: "PreferredMetadataLanguage")
@@ -796,7 +796,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.programID = try values.decodeIfPresent(String.self, forKey: "ProgramId")
         self.providerIDs = try values.decodeIfPresent([String: String].self, forKey: "ProviderIds")
         self.recursiveItemCount = try values.decodeIfPresent(Int.self, forKey: "RecursiveItemCount")
-        self.remoteTrailers = try values.decodeIfPresent([MediaURL].self, forKey: "RemoteTrailers")
+//        self.remoteTrailers = try values.decodeIfPresent([MediaURL].self, forKey: "RemoteTrailers")
         self.runTimeTicks = try values.decodeIfPresent(Int.self, forKey: "RunTimeTicks")
         self.screenshotImageTags = try values.decodeIfPresent([String].self, forKey: "ScreenshotImageTags")
         self.seasonID = try values.decodeIfPresent(String.self, forKey: "SeasonId")
@@ -817,22 +817,22 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         self.specialFeatureCount = try values.decodeIfPresent(Int.self, forKey: "SpecialFeatureCount")
         self.startDate = try values.decodeIfPresent(Date.self, forKey: "StartDate")
         self.status = try values.decodeIfPresent(String.self, forKey: "Status")
-        self.studios = try values.decodeIfPresent([NameGuidPair].self, forKey: "Studios")
+//        self.studios = try values.decodeIfPresent([NameGuidPair].self, forKey: "Studios")
         self.taglines = try values.decodeIfPresent([String].self, forKey: "Taglines")
         self.tags = try values.decodeIfPresent([String].self, forKey: "Tags")
         self.timerID = try values.decodeIfPresent(String.self, forKey: "TimerId")
         self.trailerCount = try values.decodeIfPresent(Int.self, forKey: "TrailerCount")
-        self.trickplay = try values.decodeIfPresent([String: [String: TrickplayInfo]].self, forKey: "Trickplay")
+//        self.trickplay = try values.decodeIfPresent([String: [String: TrickplayInfo]].self, forKey: "Trickplay")
         self.type = try values.decodeIfPresent(BaseItemKind.self, forKey: "Type")
         self.userData = try values.decodeIfPresent(UserItemDataDto.self, forKey: "UserData")
-        self.video3DFormat = try values.decodeIfPresent(Video3DFormat.self, forKey: "Video3DFormat")
-        self.videoType = try values.decodeIfPresent(VideoType.self, forKey: "VideoType")
+//        self.video3DFormat = try values.decodeIfPresent(Video3DFormat.self, forKey: "Video3DFormat")
+//        self.videoType = try values.decodeIfPresent(VideoType.self, forKey: "VideoType")
         self.width = try values.decodeIfPresent(Int.self, forKey: "Width")
     }
 
     public func encode(to encoder: Encoder) throws {
         var values = encoder.container(keyedBy: StringCodingKey.self)
-        try values.encodeIfPresent(airDays, forKey: "AirDays")
+//        try values.encodeIfPresent(airDays, forKey: "AirDays")
         try values.encodeIfPresent(airTime, forKey: "AirTime")
         try values.encodeIfPresent(airsAfterSeasonNumber, forKey: "AirsAfterSeasonNumber")
         try values.encodeIfPresent(airsBeforeEpisodeNumber, forKey: "AirsBeforeEpisodeNumber")
@@ -849,7 +849,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         try values.encodeIfPresent(artistItems, forKey: "ArtistItems")
         try values.encodeIfPresent(artists, forKey: "Artists")
         try values.encodeIfPresent(aspectRatio, forKey: "AspectRatio")
-        try values.encodeIfPresent(audio, forKey: "Audio")
+//        try values.encodeIfPresent(audio, forKey: "Audio")
         try values.encodeIfPresent(backdropImageTags, forKey: "BackdropImageTags")
         try values.encodeIfPresent(cameraMake, forKey: "CameraMake")
         try values.encodeIfPresent(cameraModel, forKey: "CameraModel")
@@ -859,8 +859,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         try values.encodeIfPresent(channelName, forKey: "ChannelName")
         try values.encodeIfPresent(channelNumber, forKey: "ChannelNumber")
         try values.encodeIfPresent(channelPrimaryImageTag, forKey: "ChannelPrimaryImageTag")
-        try values.encodeIfPresent(channelType, forKey: "ChannelType")
-        try values.encodeIfPresent(chapters, forKey: "Chapters")
+//        try values.encodeIfPresent(channelType, forKey: "ChannelType")
+//        try values.encodeIfPresent(chapters, forKey: "Chapters")
         try values.encodeIfPresent(childCount, forKey: "ChildCount")
         try values.encodeIfPresent(collectionType, forKey: "CollectionType")
         try values.encodeIfPresent(communityRating, forKey: "CommunityRating")
@@ -879,8 +879,8 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         try values.encodeIfPresent(episodeTitle, forKey: "EpisodeTitle")
         try values.encodeIfPresent(etag, forKey: "Etag")
         try values.encodeIfPresent(exposureTime, forKey: "ExposureTime")
-        try values.encodeIfPresent(externalURLs, forKey: "ExternalUrls")
-        try values.encodeIfPresent(extraType, forKey: "ExtraType")
+//        try values.encodeIfPresent(externalURLs, forKey: "ExternalUrls")
+//        try values.encodeIfPresent(extraType, forKey: "ExtraType")
         try values.encodeIfPresent(focalLength, forKey: "FocalLength")
         try values.encodeIfPresent(forcedSortName, forKey: "ForcedSortName")
         try values.encodeIfPresent(genreItems, forKey: "GenreItems")
@@ -906,12 +906,12 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         try values.encodeIfPresent(isSeries, forKey: "IsSeries")
         try values.encodeIfPresent(isSports, forKey: "IsSports")
         try values.encodeIfPresent(isoSpeedRating, forKey: "IsoSpeedRating")
-        try values.encodeIfPresent(isoType, forKey: "IsoType")
+//        try values.encodeIfPresent(isoType, forKey: "IsoType")
         try values.encodeIfPresent(latitude, forKey: "Latitude")
         try values.encodeIfPresent(localTrailerCount, forKey: "LocalTrailerCount")
-        try values.encodeIfPresent(locationType, forKey: "LocationType")
+//        try values.encodeIfPresent(locationType, forKey: "LocationType")
         try values.encodeIfPresent(lockData, forKey: "LockData")
-        try values.encodeIfPresent(lockedFields, forKey: "LockedFields")
+//        try values.encodeIfPresent(lockedFields, forKey: "LockedFields")
         try values.encodeIfPresent(longitude, forKey: "Longitude")
         try values.encodeIfPresent(mediaSourceCount, forKey: "MediaSourceCount")
         try values.encodeIfPresent(mediaSources, forKey: "MediaSources")
@@ -940,7 +940,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         try values.encodeIfPresent(partCount, forKey: "PartCount")
         try values.encodeIfPresent(path, forKey: "Path")
         try values.encodeIfPresent(people, forKey: "People")
-        try values.encodeIfPresent(playAccess, forKey: "PlayAccess")
+//        try values.encodeIfPresent(playAccess, forKey: "PlayAccess")
         try values.encodeIfPresent(playlistItemID, forKey: "PlaylistItemId")
         try values.encodeIfPresent(preferredMetadataCountryCode, forKey: "PreferredMetadataCountryCode")
         try values.encodeIfPresent(preferredMetadataLanguage, forKey: "PreferredMetadataLanguage")
@@ -952,7 +952,7 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         try values.encodeIfPresent(programID, forKey: "ProgramId")
         try values.encodeIfPresent(providerIDs, forKey: "ProviderIds")
         try values.encodeIfPresent(recursiveItemCount, forKey: "RecursiveItemCount")
-        try values.encodeIfPresent(remoteTrailers, forKey: "RemoteTrailers")
+//        try values.encodeIfPresent(remoteTrailers, forKey: "RemoteTrailers")
         try values.encodeIfPresent(runTimeTicks, forKey: "RunTimeTicks")
         try values.encodeIfPresent(screenshotImageTags, forKey: "ScreenshotImageTags")
         try values.encodeIfPresent(seasonID, forKey: "SeasonId")
@@ -973,16 +973,16 @@ public struct BaseItemDto: Codable, Hashable, Identifiable {
         try values.encodeIfPresent(specialFeatureCount, forKey: "SpecialFeatureCount")
         try values.encodeIfPresent(startDate, forKey: "StartDate")
         try values.encodeIfPresent(status, forKey: "Status")
-        try values.encodeIfPresent(studios, forKey: "Studios")
+//        try values.encodeIfPresent(studios, forKey: "Studios")
         try values.encodeIfPresent(taglines, forKey: "Taglines")
         try values.encodeIfPresent(tags, forKey: "Tags")
         try values.encodeIfPresent(timerID, forKey: "TimerId")
         try values.encodeIfPresent(trailerCount, forKey: "TrailerCount")
-        try values.encodeIfPresent(trickplay, forKey: "Trickplay")
+//        try values.encodeIfPresent(trickplay, forKey: "Trickplay")
         try values.encodeIfPresent(type, forKey: "Type")
         try values.encodeIfPresent(userData, forKey: "UserData")
-        try values.encodeIfPresent(video3DFormat, forKey: "Video3DFormat")
-        try values.encodeIfPresent(videoType, forKey: "VideoType")
+//        try values.encodeIfPresent(video3DFormat, forKey: "Video3DFormat")
+//        try values.encodeIfPresent(videoType, forKey: "VideoType")
         try values.encodeIfPresent(width, forKey: "Width")
     }
 }

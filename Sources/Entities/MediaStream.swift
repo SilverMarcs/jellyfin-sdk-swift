@@ -13,7 +13,7 @@ public struct MediaStream: Codable, Hashable {
     /// Gets or sets the aspect ratio.
     public var aspectRatio: String?
     /// Gets the audio spatial format.
-    public var audioSpatialFormat: AudioSpatialFormat?
+//    public var audioSpatialFormat: AudioSpatialFormat?
     /// Gets or sets the average frame rate.
     public var averageFrameRate: Float?
     /// Gets or sets the bit depth.
@@ -43,7 +43,7 @@ public struct MediaStream: Codable, Hashable {
     /// Gets or sets the comment.
     public var comment: String?
     /// Gets or sets the method.
-    public var deliveryMethod: SubtitleDeliveryMethod?
+//    public var deliveryMethod: SubtitleDeliveryMethod?
     /// Gets or sets the delivery URL.
     public var deliveryURL: String?
     public var displayTitle: String?
@@ -122,19 +122,19 @@ public struct MediaStream: Codable, Hashable {
     /// Gets or sets the title.
     public var title: String?
     /// Gets or sets the type.
-    public var type: MediaStreamType?
+//    public var type: MediaStreamType?
     /// Gets the video dovi title.
     public var videoDoViTitle: String?
     /// Gets the video range.
-    public var videoRange: VideoRange?
+//    public var videoRange: VideoRange?
     /// Gets the video range type.
-    public var videoRangeType: VideoRangeType?
+//    public var videoRangeType: VideoRangeType?
     /// Gets or sets the width.
     public var width: Int?
 
     public init(
         aspectRatio: String? = nil,
-        audioSpatialFormat: AudioSpatialFormat? = nil,
+//        audioSpatialFormat: AudioSpatialFormat? = nil,
         averageFrameRate: Float? = nil,
         bitDepth: Int? = nil,
         bitRate: Int? = nil,
@@ -149,7 +149,7 @@ public struct MediaStream: Codable, Hashable {
         colorSpace: String? = nil,
         colorTransfer: String? = nil,
         comment: String? = nil,
-        deliveryMethod: SubtitleDeliveryMethod? = nil,
+//        deliveryMethod: SubtitleDeliveryMethod? = nil,
         deliveryURL: String? = nil,
         displayTitle: String? = nil,
         dvBlSignalCompatibilityID: Int? = nil,
@@ -191,14 +191,14 @@ public struct MediaStream: Codable, Hashable {
         isSupportsExternalStream: Bool? = nil,
         timeBase: String? = nil,
         title: String? = nil,
-        type: MediaStreamType? = nil,
+//        type: MediaStreamType? = nil,
         videoDoViTitle: String? = nil,
-        videoRange: VideoRange? = nil,
-        videoRangeType: VideoRangeType? = nil,
+//        videoRange: VideoRange? = nil,
+//        videoRangeType: VideoRangeType? = nil,
         width: Int? = nil
     ) {
         self.aspectRatio = aspectRatio
-        self.audioSpatialFormat = audioSpatialFormat
+//        self.audioSpatialFormat = audioSpatialFormat
         self.averageFrameRate = averageFrameRate
         self.bitDepth = bitDepth
         self.bitRate = bitRate
@@ -213,7 +213,7 @@ public struct MediaStream: Codable, Hashable {
         self.colorSpace = colorSpace
         self.colorTransfer = colorTransfer
         self.comment = comment
-        self.deliveryMethod = deliveryMethod
+//        self.deliveryMethod = deliveryMethod
         self.deliveryURL = deliveryURL
         self.displayTitle = displayTitle
         self.dvBlSignalCompatibilityID = dvBlSignalCompatibilityID
@@ -255,17 +255,17 @@ public struct MediaStream: Codable, Hashable {
         self.isSupportsExternalStream = isSupportsExternalStream
         self.timeBase = timeBase
         self.title = title
-        self.type = type
+//        self.type = type
         self.videoDoViTitle = videoDoViTitle
-        self.videoRange = videoRange
-        self.videoRangeType = videoRangeType
+//        self.videoRange = videoRange
+//        self.videoRangeType = videoRangeType
         self.width = width
     }
 
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: StringCodingKey.self)
         self.aspectRatio = try values.decodeIfPresent(String.self, forKey: "AspectRatio")
-        self.audioSpatialFormat = try values.decodeIfPresent(AudioSpatialFormat.self, forKey: "AudioSpatialFormat")
+//        self.audioSpatialFormat = try values.decodeIfPresent(AudioSpatialFormat.self, forKey: "AudioSpatialFormat")
         self.averageFrameRate = try values.decodeIfPresent(Float.self, forKey: "AverageFrameRate")
         self.bitDepth = try values.decodeIfPresent(Int.self, forKey: "BitDepth")
         self.bitRate = try values.decodeIfPresent(Int.self, forKey: "BitRate")
@@ -280,7 +280,7 @@ public struct MediaStream: Codable, Hashable {
         self.colorSpace = try values.decodeIfPresent(String.self, forKey: "ColorSpace")
         self.colorTransfer = try values.decodeIfPresent(String.self, forKey: "ColorTransfer")
         self.comment = try values.decodeIfPresent(String.self, forKey: "Comment")
-        self.deliveryMethod = try values.decodeIfPresent(SubtitleDeliveryMethod.self, forKey: "DeliveryMethod")
+//        self.deliveryMethod = try values.decodeIfPresent(SubtitleDeliveryMethod.self, forKey: "DeliveryMethod")
         self.deliveryURL = try values.decodeIfPresent(String.self, forKey: "DeliveryUrl")
         self.displayTitle = try values.decodeIfPresent(String.self, forKey: "DisplayTitle")
         self.dvBlSignalCompatibilityID = try values.decodeIfPresent(Int.self, forKey: "DvBlSignalCompatibilityId")
@@ -322,17 +322,17 @@ public struct MediaStream: Codable, Hashable {
         self.isSupportsExternalStream = try values.decodeIfPresent(Bool.self, forKey: "SupportsExternalStream")
         self.timeBase = try values.decodeIfPresent(String.self, forKey: "TimeBase")
         self.title = try values.decodeIfPresent(String.self, forKey: "Title")
-        self.type = try values.decodeIfPresent(MediaStreamType.self, forKey: "Type")
+//        self.type = try values.decodeIfPresent(MediaStreamType.self, forKey: "Type")
         self.videoDoViTitle = try values.decodeIfPresent(String.self, forKey: "VideoDoViTitle")
-        self.videoRange = try values.decodeIfPresent(VideoRange.self, forKey: "VideoRange")
-        self.videoRangeType = try values.decodeIfPresent(VideoRangeType.self, forKey: "VideoRangeType")
+//        self.videoRange = try values.decodeIfPresent(VideoRange.self, forKey: "VideoRange")
+//        self.videoRangeType = try values.decodeIfPresent(VideoRangeType.self, forKey: "VideoRangeType")
         self.width = try values.decodeIfPresent(Int.self, forKey: "Width")
     }
 
     public func encode(to encoder: Encoder) throws {
         var values = encoder.container(keyedBy: StringCodingKey.self)
         try values.encodeIfPresent(aspectRatio, forKey: "AspectRatio")
-        try values.encodeIfPresent(audioSpatialFormat, forKey: "AudioSpatialFormat")
+//        try values.encodeIfPresent(audioSpatialFormat, forKey: "AudioSpatialFormat")
         try values.encodeIfPresent(averageFrameRate, forKey: "AverageFrameRate")
         try values.encodeIfPresent(bitDepth, forKey: "BitDepth")
         try values.encodeIfPresent(bitRate, forKey: "BitRate")
@@ -347,7 +347,7 @@ public struct MediaStream: Codable, Hashable {
         try values.encodeIfPresent(colorSpace, forKey: "ColorSpace")
         try values.encodeIfPresent(colorTransfer, forKey: "ColorTransfer")
         try values.encodeIfPresent(comment, forKey: "Comment")
-        try values.encodeIfPresent(deliveryMethod, forKey: "DeliveryMethod")
+//        try values.encodeIfPresent(deliveryMethod, forKey: "DeliveryMethod")
         try values.encodeIfPresent(deliveryURL, forKey: "DeliveryUrl")
         try values.encodeIfPresent(displayTitle, forKey: "DisplayTitle")
         try values.encodeIfPresent(dvBlSignalCompatibilityID, forKey: "DvBlSignalCompatibilityId")
@@ -389,10 +389,10 @@ public struct MediaStream: Codable, Hashable {
         try values.encodeIfPresent(isSupportsExternalStream, forKey: "SupportsExternalStream")
         try values.encodeIfPresent(timeBase, forKey: "TimeBase")
         try values.encodeIfPresent(title, forKey: "Title")
-        try values.encodeIfPresent(type, forKey: "Type")
+//        try values.encodeIfPresent(type, forKey: "Type")
         try values.encodeIfPresent(videoDoViTitle, forKey: "VideoDoViTitle")
-        try values.encodeIfPresent(videoRange, forKey: "VideoRange")
-        try values.encodeIfPresent(videoRangeType, forKey: "VideoRangeType")
+//        try values.encodeIfPresent(videoRange, forKey: "VideoRange")
+//        try values.encodeIfPresent(videoRangeType, forKey: "VideoRangeType")
         try values.encodeIfPresent(width, forKey: "Width")
     }
 }
