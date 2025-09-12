@@ -122,7 +122,7 @@ public struct MediaStream: Codable, Hashable {
     /// Gets or sets the title.
     public var title: String?
     /// Gets or sets the type.
-//    public var type: MediaStreamType?
+    public var type: MediaStreamType?
     /// Gets the video dovi title.
     public var videoDoViTitle: String?
     /// Gets the video range.
