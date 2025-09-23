@@ -60,7 +60,7 @@ public extension Paths {
         public var fields: [JellyfinAPI.ItemFields]?
         public var excludeItemTypes: [JellyfinAPI.BaseItemKind]?
         public var includeItemTypes: [JellyfinAPI.BaseItemKind]?
-//        public var filters: [JellyfinAPI.ItemFilter]?
+        public var filters: [JellyfinAPI.ItemFilter]?
         public var isFavorite: Bool?
         public var mediaTypes: [String]?
         public var imageTypes: [JellyfinAPI.ImageType]?
