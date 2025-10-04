@@ -8,21 +8,17 @@
 
 import Foundation
 
-/// A class representing an authentication result.
+/// Class AuthenticationResult.
 public struct AuthenticationResult: Codable, Hashable {
-    /// Gets or sets the access token.
     public var accessToken: String?
-    /// Gets or sets the server id.
     public var serverID: String?
-    /// Gets or sets the session info.
-    public var sessionInfo: SessionInfoDto?
-    /// Gets or sets the user.
+    public var servername: String?
     public var user: UserDto?
 
-    public init(accessToken: String? = nil, serverID: String? = nil, sessionInfo: SessionInfoDto? = nil, user: UserDto? = nil) {
+    public init(accessToken: String? = nil, serverID: String? = nil, servername: String? = nil, user: UserDto? = nil) {
         self.accessToken = accessToken
         self.serverID = serverID
-        self.sessionInfo = sessionInfo
+        self.servername = servername
         self.user = user
     }
 
@@ -30,7 +26,7 @@ public struct AuthenticationResult: Codable, Hashable {
         let values = try decoder.container(keyedBy: StringCodingKey.self)
         self.accessToken = try values.decodeIfPresent(String.self, forKey: "AccessToken")
         self.serverID = try values.decodeIfPresent(String.self, forKey: "ServerId")
-        self.sessionInfo = try values.decodeIfPresent(SessionInfoDto.self, forKey: "SessionInfo")
+        self.servername = try values.decodeIfPresent(String.self, forKey: "ServerName")
         self.user = try values.decodeIfPresent(UserDto.self, forKey: "User")
     }
 
@@ -38,7 +34,7 @@ public struct AuthenticationResult: Codable, Hashable {
         var values = encoder.container(keyedBy: StringCodingKey.self)
         try values.encodeIfPresent(accessToken, forKey: "AccessToken")
         try values.encodeIfPresent(serverID, forKey: "ServerId")
-        try values.encodeIfPresent(sessionInfo, forKey: "SessionInfo")
+        try values.encodeIfPresent(servername, forKey: "ServerName")
         try values.encodeIfPresent(user, forKey: "User")
     }
 }

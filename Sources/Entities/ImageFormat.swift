@@ -8,12 +8,11 @@
 
 import Foundation
 
-/// Enum ImageOutputFormat.
+/// Enum ImageFormat.
 public enum ImageFormat: String, Codable, CaseIterable {
     case bmp = "Bmp"
     case gif = "Gif"
     case jpg = "Jpg"
     case png = "Png"
     case webp = "Webp"
-    case svg = "Svg"
 }
